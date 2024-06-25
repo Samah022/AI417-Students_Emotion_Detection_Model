@@ -27,6 +27,9 @@ The testing script performs the following tasks:
 
 ## Running the Project
 
+## Load Dataset:
+From here: https://www.kaggle.com/datasets/gauravsharma99/fer13-cleaned-dataset/data
+
 ### Training the Model
 1. Ensure you have the necessary data in the `AI-417-Project/train` directory.
 2. Run the training script:
