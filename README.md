@@ -1,4 +1,4 @@
-# Students Emotion Detection Using Convolutional Neural Networks 🎭 
+# Students Emotion Detection Using Convolutional Neural Networks 🧑‍🎓🤖
 
 This project involves building and training a Convolutional Neural Network (CNN) model to classify human emotions from images. It includes Python scripts for training the model and using the trained model for real-time emotion classification from a webcam feed.
 
