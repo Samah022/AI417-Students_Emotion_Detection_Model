@@ -13,7 +13,7 @@ Overall, this project will help the instructors gain insights into the effective
 ### Training Script (`Train.py`)
 The training script performs the following tasks:
 
-1. **Loads and Preprocesses the Dataset**: Utilizes torchvision to load images from the 'AI-417-Project/train' directory, applies transformations (random horizontal flip and grayscale conversion), and splits the data into training, validation, and test sets.
+1. **Loads and Preprocesses the Dataset**: Utilizes torchvision to load images from the 'dataset' directory, applies transformations (random horizontal flip and grayscale conversion), and splits the data into training, validation, and test sets.
 2. **Defines the CNN Architecture**: Constructs a CNN with four convolutional layers followed by batch normalization, ReLU activations, max pooling, and a fully connected layer.
 3. **Trains the Model**: Implements a training loop that trains the model using the cross-entropy loss function and the Adam optimizer. The script also includes functionality to check validation accuracy during training.
 4. **Saves the Trained Model**: After training, the model's state dictionary is saved to a file named `pretrained_model.pth`.
@@ -31,7 +31,7 @@ The testing script performs the following tasks:
 From here: https://www.kaggle.com/datasets/gauravsharma99/fer13-cleaned-dataset/data
 
 ### Training the Model
-1. Ensure you have the necessary data in the `AI-417-Project/train` directory.
+1. Ensure you have the necessary data in the `dataset` directory.
 2. Run the training script:
     ```bash
     python Train.py
@@ -61,11 +61,10 @@ From here: https://www.kaggle.com/datasets/gauravsharma99/fer13-cleaned-dataset/
 ├── Train.py
 ├── Test.py
 ├── pretrained_model.pth
-└── AI-417-Project
-    └── train
-        ├── angry
-        ├── disgust
-        ├── fear
-        ├── happy
-        └── neutral
+└── dataset
+    ├── angry
+    ├── disgust
+    ├── fear
+    ├── happy
+    └── neutral
 ```
