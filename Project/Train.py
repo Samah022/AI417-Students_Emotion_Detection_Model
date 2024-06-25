@@ -24,7 +24,7 @@ print("Using device: ",device)
 transform = T.Compose([T.RandomHorizontalFlip(), T.Grayscale(num_output_channels=3), T.ToTensor()])
 
 #Training 
-dataset = dset.ImageFolder('AI-417-Project/train',transform=transform)
+dataset = dset.ImageFolder('dataset',transform=transform)
 
 # Splitting the dataset into train and test sets with 80% for training and 20% for testing
 train_data, test_data = train_test_split(dataset, test_size=0.2, random_state=42)
